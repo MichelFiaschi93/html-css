@@ -1,0 +1,17 @@
+div > p {
+	display: none;
+}
+
+div:hover > p {
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	width: 300px;
+	display: block;
+}
+
+/* primeiro eu coloquei o simbolo de maio para mostrar que o p fazia parte de div
+podendo selecionar apenas o p dentro do div, coloquei display none para ocultar
+quando passar com o mouse em cima o p dentro da div aparecera como um block*/

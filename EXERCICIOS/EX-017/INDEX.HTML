@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TRABALHANDO COM FONTES</title>
+	<style type="text/css">
+  		@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+  		/*A fonte tem no google fonts, eles ja dão o link para voce poder trabalhar*/
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			/*essa combinação é usada porque se não tiver a fonte arial no computador, o navegador vai procurar a helvetica que tambem é parecida e não tem serifa, se não tiver nenhuma das duas, o computador vai usar a fonte mais comum sem serifa.
+			porque fonte sem serifa? Porque ajuda na hora da leitura, ela fica mais aparente e não fica muito carregado.*/
+			/*
+			fontes absolutas = cm, mm, px(aconselhado), in, pt(usado para programas que vao criar documentos impressos como word e excell), pc
+			fontes relativas = em(aconselhado), ex, rem, vw, vh, %
+			16 px geralmente é igual a 1em
+			o em é a medida padrão do programa, se voce colocar 2em, significa que vai aumentar o dobro que 16px no caso do navegador que estou usando
+			o rem trabalha de acordo com a medida do body(root), se a medida do body não foi alterada, então a medida de 1 rem sera o mesmo que 1em ou 16 px*/
+			font-weight: 400;
+			/*com o font-weight voce tem o peso de 100 ate 900 (não sao todas as fontes que tem isso) que vai do lighter(fonte mais leve), normal(fonte normal), bold(letra negrito) e bolder(mais forte que o negrito)*/
+			font-style: italic; 
+			/*o font-style é o estilo da fonte, com isso eu mudei para italico*/
+			text-decoration: underline;
+			/*o text-decoration é a decoração que voce usa no texto, no caso eu coloquei o underline que é o sublinhado*/
+		}
+
+		h1 {
+			/*nos podemos usar uma coisa chamada shorthand para encurtar os numeros de linhas, mas o shorthand tem uma ordem, no caso de font é : font-style -> font-weight -> font-size -> font-family*/
+			text-align: center;
+			font: italic bold 3em Times New Roman, Times, serif;
+		}
+
+		h2 {
+			text-align: center;
+			font: normal 2em 'Work Sans', serif;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Trabalhando com Fontes</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<h2>Substituto de exercicios</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Incluindo Imagem no site</title>
+</head>
+<body>
+	<h1>Vamos por Imagens no Site</h1>
+	<picture>
+		<!-- com a tag picture, trabalhar em sequencia, da menor pra maior se não vai pegar a primeira, se a primeira for a maior não vai atualizar as outras-->
+		<source media="(max-width: 750px)" srcset="IMAGENS/FOTO-P.png" type="image/png">
+		<source media="(max-width: 1000px)" srcset="IMAGENS/FOTO-M.png" type="image/png">
+		<!--voce pode setar a largura maxima para definir o tamanho de acordo
+			com a tela que voce quiser, se passar de 1000, vai setar a imagem
+			G
+			obs : para o programa funcionar colocar o "type" para colocar o tipo do source-->
+		<img src="IMAGENS/FOTO-G.png">
+	</picture>
+	<h1>REPRODUÇÃO DE AUDIO</h1>
+	<p>Vamos usar a ferramenta "audio" para reproduzir sons</p>
+	<audio src="MIDIA/Happy Mistake - RKVC.mp3" controls autoplay></audio>
+	<!--OBS : CUIDADO!!O source de imagem e de audio são diferentes, em imagem eu uso o "setsrc" e em video o "src" comum--> 
+		no <audio> dentro dele tem que estar o controls = aparece o reprodutor de audio, e o autoplay=fazer a musica tocar, esse metodo acima é o mais simples, alguns navegadores podem dar erro usando formatos como o mp3 por exemplo então é sempre bom dar opções-->
+	<audio preload="metadata" autoplay controls>
+		<!--a função preload tem 3 opções:
+		-auto (opção padrão) nessa o som vai comecar a ser baixado assim que voce carrega o navegador, essa opção é ruim pois se voce tiver mais de um audio ou um audio pesado pode demorar muito para carregar a pagina e as vezes a pessoa so procura um audio.
+		-metadata = essa opção é a mais recomendada, pois ela so faz o download do audio se voce apertar play, o ruim dela é que o audio vai demorar um pouco pra dar play mas deixa a navegação na pagina mais fluida e 1 audio só não demora muito.
+		-o none é igual ao auto, ele vai fazer o download de tudo enquanto carrega a pagina.-->
+		<source src="MIDIA/guanacast-33.mp3" type="audio/mpeg">
+		<source src="MIDIA/guanacast-33.ogg" type="audio/ogg">
+		<source src="MIDIA/guanacast-33.wav" type="audio/wav">
+		<p>Infelizmente o seu navegador não é compativel com nenhum desses audios, para baixar e tentar reproduzir no seu computador <a href="MIDIA/guanacast-33.mp3">Clique Aqui</a></p>
+			<!--esse esquema de audio com varios formatos é igual o sistema de imagem, primeiro ele vai carregar o primeiro, se ele não conseguir carregar por conta do formato ele vai pro segundo e assim pro terceiro se o segundo não for compativel
+			OBS : se o navegador não conseguir recarregar nenhuma das opções de audio disponiveis, ira aparecer a mensagem no paragrafo.-->
+	</audio>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AULA 16-4</title>
+	<style type="text/css">
+		body {
+			font-family: arial, helvetica, sans-serif;
+			background-color: darkslategrey;
+			margin: 0px;
+		}
+		header {
+			background-color: white;
+			padding: 10px;
+			margin: 10px;
+			box-shadow: inset -1px -1px 3px 3px lightgray;
+			border-radius: 20px;
+
+		}
+		header > h1 {
+			text-align: center;
+		}
+
+		nav > a {
+			margin-left: 52px;
+			padding: 2px;
+			padding-left: 10px;
+			padding-right: 10px;
+			background-color: lightskyblue;
+			color: black;
+			text-decoration: none;
+			font-weight: bold;
+			box-shadow: inset 0px -1px 1px 1px black;
+		}
+
+		nav > a:hover {
+			text-decoration: underline;
+			color: white;
+		}
+
+		nav {
+			background-color: red;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			box-shadow: 0px 1px 3px 1px darkred;
+			border-radius: 9px;
+		}
+		main {
+			background-color: white;
+			padding: 10px;
+			margin: 10px;
+			border-radius: 20px 0px;
+			box-shadow: inset 0px -1px 3px 5px lightgray;
+
+		}
+
+		article {
+			background-color: lightsalmon;
+			margin: 0px;
+		}
+
+		article > h2 {
+			text-align: center;
+			background-color: lightgray;
+			padding: 10px;
+			margin: -10px;
+		}
+		article > p {
+			text-align: justify;
+			padding: 1px;
+		}
+
+		aside {
+			background-color: gold;
+			font-weight: bold;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			padding: 1px;
+			margin: 0px;
+			text-align: center;
+
+		}
+		div#bola {
+			height: 300px;
+			width: 300px;
+			margin: 10px;
+			background-color: white;
+			box-shadow: 1px 1px 1px 1px lightgray;
+			border-radius: 50%; /*pode se usar % tambem no border-radius*/
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>GROUPING TAGS</h1>
+		<nav> <!--nav = menu intuitivo, navegação-->
+			<a href="#">LINK1</a>
+			<a href="#">LINK2</a>
+			<a href="#">LINK3</a>
+			<a href="#">LINK4</a>
+			<a href="#">LINK5</a>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<p>sessão 1</p>
+		</section>
+		<section>
+			<p>sessão 2</p>
+		</section>
+		<article>
+			<h2>Artigo Sobre o Brasil</h2>
+			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+			<aside><p>Escrito por Lorem do Ipsum</p>
+			</aside><!--aside é sobre algo relacionado ao assunto-->
+		</article>
+	</main>
+	<footer>
+		<p>Desenvolvido por Michel.</p>
+	</footer>
+	<!--no html antigo voce usava divs para fazer as partes do site, no html 5, voce usa o header que é o cabecalho, o main que é o corpo do site e o footer que é a parte de baixo do site--> 
+	<div id="bola"></div>
+
+
+</body>
+</html>

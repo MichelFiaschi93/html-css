@@ -1,0 +1,41 @@
+/*em HTML ID = # em CSS
+  em HTML class = . em CSS
+  quando voce cria um id no HTML, de preferencia por 1 unico ID, o ID deve estar no titulo principal, o ID
+  se sobressai se for colocado junto da classe independente da ordem, so que voce pode mesclar duas classes
+  e vai se sobressair a que estiver primeiro na ordem*/
+
+body {
+	background-color: lightgreen;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	color: #508A58;
+}
+
+h1#principal {
+	text-align: center;
+	color: white;
+	background-color: #69806C;
+
+}
+
+.basico {
+	color: #1CB378;
+}
+
+.intermediario {
+	color: #FFFF00;
+}
+
+.avancado {
+	color: #C73A30;
+}
+
+.destaque {
+	color: white;
+}
+
+.estudar {
+	background-color: darkgoldenrod;
+}

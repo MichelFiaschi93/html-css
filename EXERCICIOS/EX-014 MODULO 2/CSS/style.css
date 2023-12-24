@@ -1,0 +1,39 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-image: linear-gradient(to right, #BF6415, #023E73, #8C503A);
+}
+
+main {
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px black;
+	width: 900px;
+	text-align: center;
+	padding: 10px;
+	margin: auto;
+	/*-o padding de 10px é para dar uma engordada no espaço do background e 
+	não deixar a letra muito colada com a borda.
+	-o margin: auto; centraliza o background não se importando como a pagina 
+	web vai ficar tanto em tamanho quanto em largura
+	-border-radius: 20px; o border-radius ve o angulo da borda
+	-o box-shadow define a sombra da sua caixa, foi colocado 5 pixels porque 
+	com 10 ficou muito forte e em preto pra ficar mais visivel*/
+}
+
+h1{
+	color: #024059;
+	text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+	color: darkgray;
+	text-shadow: 1px 1px 1px black;
+
+}
+
+p {
+	text-align: justify;
+}

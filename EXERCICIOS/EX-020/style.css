@@ -1,0 +1,17 @@
+div {
+	background-color: lightgrey;
+	text-align: center;
+	height: 200px;
+	width: 200px;
+	border: 1px solid black;
+	display: inline-block;
+	/*display : inline-block pra colocar as divs lado a lado, a border pra verificar*/
+}
+
+div:hover {
+	background-color: yellow;
+}
+
+/*uma pseudo-classe é formada com os ":" ela tem varios comandos.
+o hover é um comando que quando voce passa pelo objeto linkado ao
+hover o hover é ativado, nesse exemplo ele vai mudar a cor da div*/

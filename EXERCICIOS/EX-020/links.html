@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personalizando Links</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		a {
+			color: red;
+			text-decoration: none;/*com o none no text decoration o texto perde a parte
+			o sublinhado em baixo*/
+			font-weight: bold;
+		}
+		a:visited {
+			color: darkred;
+		}
+		a:hover {
+			text-decoration: underline;
+			color: black;
+		}
+		a:active {
+			color: darkgrey;
+		}
+		.especial {
+			background-color: lightpink;
+		}
+		.especial::before {
+			color: gold;
+			content: '☞ ';
+		}
+		.especial::after {
+			content: ' ☜';
+			color: gold;
+		}
+		/*
+		# =  id
+		. =  class
+		: =  pseudo-class
+		:: = pseudo-element
+		o border é a borda para fora da area da fonte, entre a borda e a fonte tem um espaço que se chama
+		padding, da borda para fora tem um espaçamento tambem, esse espaçamento se chama margin, tem um 
+		espaçamento tambem na parte de fora da propria borda que se chama outline*/
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<ul>
+		<li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório do Github</a></li>
+		<li><a href="https://www.youtube.com/@CursoemVideo" target="_blank" class="especial">Canal do Youtube</a></li>
+		<li><a href="https://www.cursoemvideo.com/" target="_blank">Site do Curso em Video</a></li>
+	</ul>
+
+</body>
+</html>

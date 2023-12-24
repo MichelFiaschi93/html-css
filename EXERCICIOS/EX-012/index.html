@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inserindo Videos no Navegador</title>
+</head>
+<body>
+	<h1>Inserindo Videos Hospedados Localmente</h1>
+	<p>Esse video está inserido no meu proprio servidor</p>
+	<video width="500px" poster="IMAGENS/limoes-capa.png" controls>
+		<!-- O "poster" serve para mostrar a capa do video antes de voce apertar play, as vezes pode ser usado ate mesmo como propaganda para voce clicar no video-->
+		<source src="MIDIA/meu-video.mp4" type="video/mp4">
+		<source src="MIDIA/meu-video.m4v" type="video/mp4">
+		<source src="MIDIA/meu-video.ogv" type="video/ogv">
+		<source src="MIDIA/meu-video.webm" type="video/webm">
+		<p>Nenhuma das opções de midia disponiveis são compativeis com seu navegador, por favor, atualizar o navegador ou se voce preferir baixar para rodar no seu reprodutor de midia local <a href="meu-video.mp4">Clique Aqui</a>.</p>
+	</video>
+	<h1>Inserindo videos do Youtube</h1>
+	<p>Para deixar seu site mais leve e não gerar custos adicionais para seu cliente, voce pode colocar o video no Youtube, Clicar em "incorporar" com isso o youtube vai te dar um codigo html para voce inserir na sua pagina</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/DwlpnxUZsdA?si=tv9hBXJEOyDhC5a3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	<!--se voce quiser deixar o video privado o professor aconselhou voce usar o vimeo, o vimeo pode deixar privado para contas e publico, so que voce tem que pagar a assinatura, o vimeo tem tambem muito mais opções para o video-->
+
+</body>
+</html>
