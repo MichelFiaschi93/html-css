@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alinhamento Vertical</title>
+	<style type="text/css">
+		#container {
+			background-image: url('IMAGENS/target001.png');
+			background-size: 100% 100%;
+			position: relative;
+			height: 96vh;
+			padding: 10px;
+			background-color: purple;
+		}
+		#conteudo {
+			background-image: url('IMAGENS/target001.png');
+			background-size: 100% 100%;
+			position: absolute;
+			height: 200px;
+			width: 400px;
+			left: 50%;
+			top: 50%;
+			background-color: yellow;
+			transform: translate(-50%, -50%);
+			/*o transform move o objeto que ja tem uma posição definida, ele pode ajudar a mexer no tamanho e em outras coisas do tipo*/
+		}
+	</style>
+</head>
+<body>
+	<section id="container">
+		<article id="conteudo">
+			
+		</article>
+	</section>
+
+</body>
+</html>
