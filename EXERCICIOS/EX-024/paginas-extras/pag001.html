@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>teste</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: lightblue;
+			color: black;
+		}
+		table {
+			border-collapse: collapse;
+			margin: auto;
+		}
+		th, td {
+			border: 1px solid black;
+			padding: 10px;
+		}
+		caption {
+			font-size: 1.5em;
+			background-color: darkblue;
+			padding: 5px;
+			font-weight: bold;
+			color: white;
+		}
+		col.cnome {
+			background-color: green;
+		}
+		col.cgrupo {
+			background-color: yellow;
+		}
+		col.cprof {
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<colgroup>
+			<!--o comando "col" substitui a coluna selecionada na tabela, ele funciona sendo adicionado se auto vinculado ao th em ordem, como tem 4 colunas voce pode colocar ate 4 cols.
+				span = o span serve para vincular o comando col com mais de duas colunas de uma vez como feito abaixo em cgrupo que ira substituir csexo e cidade.
+				obs : voce tem que usar o scope para mostrar ao programa oque e coluna ou nao em th-->
+			<col class="cnome">
+			<!--<col class="csexo">
+			<col class="cidade">-->
+			<col class="cgrupo" span="2">
+			<col class="cprof">
+		</colgroup>
+		<caption>Cadastro</caption>
+		<tr>
+			<th scope="col">Nome</th>
+			<th scope="col">Sexo</th>
+			<th scope="col">Idade</th>
+			<th scope="col">Profissao</th>
+		</tr>
+		<tr>
+			<th>Ana Maria</th>
+			<th>F</th>
+			<th>25</th>
+			<th>Jornalista</th>
+		</tr>
+		<tr>
+			<th>Claudio</th>
+			<th>M</th>
+			<th>28</th>
+			<th>Programador</th>
+		</tr>
+		<tr>
+			<th>Gustavo</th>
+			<th>M</th>
+			<th>42</th>
+			<th>Professor</th>
+		</tr>
+		<tr>
+			<th>Helio</th>
+			<th>M</th>
+			<th>19</th>
+			<th>Vendedor</th>
+		</tr>
+		<tr>
+			<th>Maria</th>
+			<th>F</th>
+			<th>39</th>
+			<th>Medica</th>
+		</tr>
+		<tr>
+			<th>Otavio</th>
+			<th>M</th>
+			<th>22</th>
+			<th>Nutricionista</th>
+		</tr>
+	</table>
+
+</body>
+</html>
