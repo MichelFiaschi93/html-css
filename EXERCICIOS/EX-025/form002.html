@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Segundo Formulario</title>
+</head>
+<body>
+	<h1>Teste de Formulario</h1>
+	<form action="cadastro.php" method="POST" autocomplete="on">
+
+		<p>
+			<label for="iusu">Usuario : </label>
+			<input type="text" name="usu" id="iusu" required minlength="5" size="10" maxlength="30" placeholder="max 30 caracteres" autocomplete="username">
+		</p>
+		<p>
+			<label for="isenha">Senha : </label>
+			<input type="password" name="senha" id="isenha" required minlength="8" placeholder="max 30 caracteres" autocomplete="current-password">
+			<!--o autocomplete em input mostra ao navegador o tipo de dado que voce vai preencher, existem varias opcoes-->
+		</p>
+		<p>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Limpar">
+		</p>
+		<!--o botao required funciona para notificar a obrigacao de preencher os dados para funcionar,
+			o minlength e a quantidade minima de caracteres exigidos, a parte mais complexa de filtro de caracteres e definida pelo php
+			Size: o size e o tamanho do balao que voce precisa preencher, colocando 10 significa que ele sera do tamanho de 10 caracteres, entretanto, os caracteres podem mudar de tamanho dependendo da fonte que voce colocar no script entao as vezes pode aparecer um pouco mais ou um pouco menos de uma vez
+			o placeholder e uma dica sobre como preencher o input de text, ele se auto apaga assim que voce comeca a preencher-->
+
+
+	</form>
+
+</body>
+</html>

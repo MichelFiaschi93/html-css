@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formulario</title>
+	<style type="text/css">
+		
+		* {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Criando Meu Primeiro Formulario</h1>
+	<form action="cadastro.php" method="POST" autocomplete="off">
+		<!--o autocomplete e um mecanismo do navegador que completa automaticamente as 
+			informacoes, voce tem como desligar colocando 'off'
+			o method e usado para voce indicar oque voce quer fazer com as informacoes do formulario
+			se a informacao nao for de seguranca voce pode optar por get, agora se for de seguranca voce tem que usar o method como POST, mas, mesmo usando o post vasculhando na central de comando do navegador voce consegue acessar as informacoes entao o fundamental para esse tipo de coisa e estudar sobre seguranca https-->
+		<p><label for="inome">Nome :</label> <input type="text" name="nome" id="inome"></p>
+		<p><label for="isobrenome">Sobrenome :</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+		<!--o label serve para vincular o item ao nome do item, ele vincula as informacoes diminuindo a chance de erro-->
+		<p><input type="submit" value="Enviar"></p>
+	</form>
+
+</body>
+</html>
