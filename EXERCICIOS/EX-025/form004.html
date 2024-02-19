@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario 4</title>
+</head>
+<body>
+	<h1>Quarto Exemplo de Formulario</h1>
+	<form method="get" action="cadastro.php">
+		<fieldset>
+			<!--o fieldset cria um espaco para voce colocar suas informacoes pessoais de cadastro deixando a pagina mais organizada
+				o legend eh uma legenda que fica no meio do fieldset demonstrando para oque eh aquele balao-->
+				
+			<legend>Dados Pessoais</legend>
+			<p>
+				<label for="inome">Nome : </label>
+				<input type="text" name="nome" id="inome" autocomplete="name" required maxlength="30">
+			</p>
+			<p>
+				<label for="iemail">E-Mail : </label>
+				<input type="email" name="email" id="iemail" autocomplete="email" required>
+			</p>
+			<p>
+				<label for="itel">Telefone : </label>
+				<input type="tel" name="tel" id="itel" autocomplete="Telefone" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx" required>
+				<!--estudar sobre RegEx e patterns em HTML5,ambos podem ser utilizados, mas o mais correto eh usar o javascript pra configurar o formulario-->
+			</p>
+			<p>
+				<input type="submit" value="Mandar">
+				<input type="reset" value="Apagar">
+			</p>
+		</fieldset>
+	</form>
+
+</body>
+</html>

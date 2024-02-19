@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formulario 6</title>
+</head>
+<body>
+	<h1>Formulario 6</h1>
+	<form method="POST" action="cadastro.php" autocomplete="on">
+		<fieldset>
+			<legend>Mudando a Paleta de Cor</legend>
+			<p>
+				<label for="icolor">Cor : </label>
+				<input type="color" name="cor" id="icolor" value="#00ff00">
+			</p>
+			<!--ocolor te da uma paleta de cor para voce achar a cor
+				tem como setar uma cor inicial com value-->
+		</fieldset><br>
+		<fieldset>
+			<legend>Nota de Satisfacao</legend>
+			<p>
+				<label for="isatisfacao">Satisfacao do Cliente : </label>
+				<input type="range" name="satisfacao" id="isatisfacao" min="1" max="5">
+				<!--o range tem uma escala de 0 a 100, ele funciona para dar nota a algo. da pra editar a escala de range com o min e max.-->
+			</p>
+		</fieldset><br>
+		<fieldset>
+			<legend>Inserir foto ou arquivo</legend>
+			<p>
+				<label for="ifile">Inserir Aquivo : </label>
+				<input type="file" name="file" id="ifile">
+				<!--o file eh um carregador de arquivo, ele vai abrir as pastas do seu computador, voce vai selecionar o arquivo que voce quer mandar pro site e mandar-->
+			</p>
+		</fieldset><br>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="limpar">
+	</form>
+
+</body>
+</html>

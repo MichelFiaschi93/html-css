@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formulario 5</title>
+</head>
+<body>
+	<h1>Vamos Para Nosso Quinto Formulario</h1>
+	<form method="get" action="cadastro.php" autocomplete="on">
+		<fieldset>
+			<legend>Sexo</legend>
+			<p>
+				<input type="radio" name="sexo" id="isexmasc"><label for="isexmasc">Masculino</label><br>
+				<input type="radio" name="sexo" id="isexfem"><label for="isexfem">Feminino</label><br>
+			</p>
+			<!--se voce colocar o mesmo name para os dois sexos ele ira escolher apenas 1 deles, se o name estiver diferente voce consegue marcar os dois oque nao seria recomendado para opcao-->
+		</fieldset>
+		<fieldset>
+			<legend>Esporte Favorito</legend>
+			<p>
+				<input type="checkbox"name="fut" id="ifut"><label for="ifut">Futebol</label><br>
+				<input type="checkbox"name="hand" id="ihand"><label
+				 for="ihand">Handebol</label
+				><br>
+				<input type="checkbox"name="volei" id="ivolei"><label for="ivolei">Volei</label><br>
+				<input type="checkbox"name="basq" id="ibasq"><label for="ibasq">Basquete</label><br>
+				<input type="checkbox"name="tenis" id="itenis"><label for="itenis">Tenis
+				</label>
+				<!--o checkbox e usado para multiplas alternativas, foi usado o esporte para dar um exemplo, para facilitar se usa o label para linkar o checkbox ao nome pois num futuro uso com o celular eh muito dificil ticar o checkbox, clicando no nome fica bem mais facil-->
+			</p>
+		</fieldset>
+			<p>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Limpar">
+			</p>
+		</fieldset>
+	</form>
+
+</body>
+</html>
