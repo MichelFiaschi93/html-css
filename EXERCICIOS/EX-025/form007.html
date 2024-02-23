@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario 7</title>
+</head>
+<body>
+	<h1>Formulario 7</h1>
+	<form method="get" autocomplete="on" action="cadastro.php">
+		<fieldset>
+			<legend>Escolha seu Estado e Profissao</legend>
+			<p>
+				<label for="iest">Estado </label>
+				<select name="Estado" id="iest">
+					<option selected>  ---Escolha---  </option>
+					<optgroup label="Regiao Sudeste">
+						<option value="SP">Sao Paulo</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="RJ">Rio de Janeiro</option>
+					</optgroup>
+					<optgroup label="Regiao Sul">
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="PR">Parana</option>
+					</optgroup>
+					<optgroup label="Regiao Nordeste">
+						<option value="RN">Rio Grande do Norte</option>
+						<option value="PE">Pernambuco</option>
+						<option value="MA">Maranhao</option>
+					</optgroup>
+					<optgroup label="Regiao Centro-Oeste">
+						<option value="MT">Mato Grosso</option>
+						<option value="GO">Goias</option>
+						<option value="MS">Mato Grosso do Sul</option>
+					</optgroup>
+					<optgroup label="Regiao Norte">
+						<option value="AM">Amazonas</option>
+						<option value="PA">Para</option>
+						<option value="AC">Acre</option>
+					</optgroup>
+				</select>
+				<!--sempre quando voce precisar de uma informacao que ira ter varias opcoes mas voce so precisa selecionar uma, se usa o select.
+				-option = o option vai dentro do select, significa cada opcao que esta dentro do select.
+				-optgroup = o optgroup serve para agrupar os selects por algum grupo especifico deixando mais organizado e facil de achar, nesse exemplo foi usado os estados do brasil para ficar mais facil de entender as ferramentar funcionando-->
+			</p>
+			<p>
+				<label for="iprof">Profissao : </label>
+				<input type="text" name="prof" id="iprof" list="i1prof">
+				<datalist id="i1prof">
+					<option label="DEV">Desenvolvedor</option>
+					<option label="PROF">Professor</option>
+					<option label="DES">Designer</option>
+					<option label="ADM">Administrador</option>
+					<option label="ADV">Advogado</option>
+					<option label="CONT">Contabilista</option>
+					<option label="VEND">Vendedor</option>
+				</datalist>
+				<!--nesse exemplo eu usei uma lista de profissoes com a label para facilitar.
+					-datalist = o datalist eh oque o nome significa, ele armazena uma lista de data contendo informacoes diversas. para linkar ele, se usa o id, so que pra linkar no input eu preciso usar o comando "list"--> 
+			</p>
+			<p>
+				<label for="imsg">Mensagem : </label><br>
+				<textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua Mensagem aqui ..."></textarea>
+				<!--o textarea eh um lugar para por texto e informacoes, geralmente eh um lugar para por reclamacoes ou solicitacoes para o site, da pra setar o tamanho inicial com cols e rows do mesmo jeito que se usa em tabelas-->
+			</p>
+		</fieldset><br>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpar">
+	</form>
+
+</body>
+</html>

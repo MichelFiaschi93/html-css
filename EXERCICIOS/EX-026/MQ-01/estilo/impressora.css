@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*Estilo para Impressora*/
+
+* {
+	padding: 10px;
+	margin: 10px;
+}
+
+html {
+	font-family: 'Corrier New', corrier, monospace;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+menu {
+	display: none; /*o display none como o proprio nome diz, nao vai mostrar nada desse devido conteudo,
+	oque faz sentido numa pagina de impressao imprimir apenas a informacao e nao coisas como o menu de 
+	uma pagina que serve para melhorar a navegacao*/
+}
+
+article::after {
+	font-size: 1.0;
+	content: 'Este artigo foi gerado por um aluno do curso em video';
+}
+
+article {
+	width: 100%;
+	text-align: justify;
+}
+
+h1 {
+	text-align: center;
+	text-decoration: underline;
+}
