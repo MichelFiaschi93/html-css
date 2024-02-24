@@ -13,7 +13,6 @@ html, body {
 	background-size: contain; /*o background-size : contain 
 	mostra a imagem inteira nele sem ficar nenhuma parte fora*/
 	background-repeat: no-repeat;
-	background-position: left bottom;
 }	
 
 h1 {

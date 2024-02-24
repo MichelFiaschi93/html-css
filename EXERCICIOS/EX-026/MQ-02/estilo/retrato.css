@@ -2,5 +2,6 @@
 
  body {
  	background-image: url(../../imagens/cev-portrait.jpg);
- 	background-position: center bottom;
+ 	background-position: center bottom; /*position : center bottom pois no smartphone ou tablet se a imagem
+ 	for um pouco maior que o tamanho do screen, vai focar no meio do screen tendo um aproveitamento melhor.*/
  }
