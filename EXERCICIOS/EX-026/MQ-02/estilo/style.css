@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+	height: 100vh;
+	weight: 100vw;
+	background-color: darkgray;
+	background-size: contain; /*o background-size : contain 
+	mostra a imagem inteira nele sem ficar nenhuma parte fora*/
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}	
+
+h1 {
+	color: white;
+	text-shadow: 3px 3px 0px #233eff;
+	text-align: center;
+}
