@@ -10,35 +10,67 @@ html, body {
 
 header {
 	background-color: darkgray;
-	padding: 10px;
 	margin-bottom: 10px;
 }
 
-header > h1 {
+header h1 {
 	text-align: center;
 	padding: 10px;
+	padding-bottom: 20px;
 }
 
 header li {
-	color: white;
 	background-color: gray;
-	display: inline;
+	display: block;
 	padding: 10px;
+	text-align: center;
+	border-top: 1px solid darkgray;
 }
-main > h2 {
+
+header a {
+	text-decoration: none;
+	color: white;
+}
+
+header li:hover {
+	background-color: darkgray;
+}
+
+span#menu {
+	color: white;
+	background-color: black;
+	text-align: center;
+	display: block;
 	padding: 10px;
+	cursor: pointer; /*o cursor pointer vira uma maozinha diferente da flecha convensional*/
+}
+
+menu {
+	display: none;
+}
+
+span#menu:hover {
+	background-color: white;
+	color: black;
+}
+
+main h2 {
+	padding: 10px;
+	padding-bottom: 20px;
 }
 
 
 main {
 	background-color: white;
-	width: 60vw;
+	width: 90vw;
 	margin: auto;
 	border-radius: 10px;
 	padding: 10px;
 }
 
-main > p {
+main p {
 	text-align: justify;
+	text-indent: 20px;
+	padding-bottom: 20px;
 }
 
