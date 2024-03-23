@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+@media screen and (min-width: 768px) {
+	span#menu { /*para nao dar erro, seje o mais especifico possivel quando ao vinculo, nesse caso vinculei o 
+		id com o menu que eh o script que eu quero que suma*/
+		display: none;
+	}
+
+	menu {
+		display: block;
+		text-align: center;
+	}
+
+	menu > ul > li {
+		display: inline-block;
+		width: 100px;
+		border-radius: 10px 0 10px 0;
+		border: 1px solid rgb(50, 50, 50);
+	}
+
+	main {
+		width: 768px; /*botar um padrao para o width e nao ter problema de tamanho, como comeca a 768, nao vai ter
+		problema de roubar tela*/
+	}
+
+}
